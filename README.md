@@ -26,6 +26,14 @@ Installing modules requests, colorama:
 
 `pip install colorama`
 
+Installing git:
+
+`pkg install git`
+
+Download my script:
+
+`git clone https://github.com/P1rat1/PiratBomber`
+
 Go to the directory:
 
 `cd PiratBomber`
