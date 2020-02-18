@@ -5,7 +5,7 @@ The author is not responsible for damaged phones. Apply this miracle only in the
 
 #### For Termux:
 
-if you don't have Python installed, then install it.
+If you don't have Python installed, then install it.
 
 Installing Python:
 
