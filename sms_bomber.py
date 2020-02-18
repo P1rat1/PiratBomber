@@ -1,7 +1,6 @@
 import requests
-from colorama import init, Fore, Back, Style
 from time import sleep
-init()
+
 
 proxies = {
     'http': '193.136.119.21:80',
@@ -13,7 +12,7 @@ proxies = {
 }
 
 
-print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
+print('''
  ____ ____ ____ ____ ____      
 ||P |||i |||r |||a |||t ||     
 ||__|||__|||__|||__|||__||     
@@ -22,7 +21,7 @@ print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
 ||B |||o |||m |||b |||e |||r ||
 ||__|||__|||__|||__|||__|||__||
 |/__\|/__\|/__\|/__\|/__\|/__\|
-''' + Style.RESET_ALL)
+''')
 
 
 a = input('Select target:')
