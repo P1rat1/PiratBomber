@@ -2,19 +2,10 @@ Disclaimer.
 ----------
 The author is not responsible for damaged phones. Apply this miracle only in the study tour purposes.
 
-Preface
-----
-The script works only with **root** rights!
 
 #### For Termux:
 
-Intsalling tsu:
-
-`pkg install tsu`
-
-Next we will do everything from the superuser.
-
-`tsudo`
+if you don't have Python installed, then install it.
 
 Installing Python:
 
@@ -23,8 +14,6 @@ Installing Python:
 Installing modules requests, colorama:
 
 `pip install requests`
-
-`pip install colorama`
 
 Installing git:
 
