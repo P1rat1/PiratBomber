@@ -24,7 +24,7 @@ print('''
 ''')
 
 
-a = input('Select target:')
+a = input('phone number')
 b = 10
 class services():
 	# service number 1
